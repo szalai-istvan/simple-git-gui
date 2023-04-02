@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="simple_git_gui:jar">
-    <output-path>$PROJECT_DIR$/artifact/simple_git_gui_jar</output-path>
-    <root id="archive" name="Simple git GUI.jar">
-      <element id="module-output" name="simple_git_gui" />
+  <artifact type="jar" name="simple-git-gui:jar">
+    <output-path>$PROJECT_DIR$/artifact/artifacts/simple_git_gui_jar</output-path>
+    <root id="archive" name="simple-git-gui.jar">
+      <element id="module-output" name="simple-git-gui" />
     </root>
   </artifact>
 </component>
