@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 
 import static classes.tabdefinitions.Tabs.buildTabs;
@@ -14,8 +15,18 @@ public class Main {
         addFormatRules();
 
         JFrame window = new JFrame("Simple Version Control UI");
+        window.setIconImage(
+                new ImageIcon(
+                        Main.class
+                                .getClassLoader()
+                                .getResource("icon.png"))
+                        .getImage()
+        );
+
         window.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        window.setSize(495, 305);
+        window.setSize(515, 305);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        window.setLocation((screenSize.width - 515)/2, (screenSize.height - 305)/2);
         window.getContentPane().setBackground(PINK_237_231_232);
 
         JTabbedPane tabbedPane = buildTabs();
