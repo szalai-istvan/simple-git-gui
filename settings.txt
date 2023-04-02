@@ -1,5 +1,0 @@
-WORK_FOLDER=/home/istvan/Desktop/testing
-REMOTE_URL=https://github.com/szalai-istvan/learning-django.git
-TOKEN=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
-USERNAME=szalai-istvan
-REPOSITORY_NAME=learning-django
