@@ -1,0 +1,5 @@
+WORK_FOLDER=/
+REMOTE_URL=https://www.github.com/nevem/repom
+TOKEN=asdasdasdasd
+USERNAME=nevem
+REPOSITORY_NAME=r
