@@ -86,13 +86,7 @@ public class Command {
                     .command(prompt.split(" "))
                     .start();
 
-            while (process.isAlive()) ;
-            List<String> errorLog = process.errorReader().lines().collect(Collectors.toList());
-            if (errorLog.stream().anyMatch(e -> e.contains("fatal") || e.contains("error"))) {
-                throw new IllegalAccessException();
-            }
-
-            List<String> fullOutput = Stream.concat(process.inputReader().lines(), errorLog.stream())
+            List<String> fullOutput = process.inputReader().lines()
                     .collect(Collectors.toList());
             return ProcessResult.ofSuccess(fullOutput);
         } catch (Throwable e) {

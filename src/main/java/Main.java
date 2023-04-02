@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         initializeEnvironment();
         addFormatRules();
+        addFormatRules();
 
         JFrame window = new JFrame("Simple Version Control UI");
         window.setIconImage(
